@@ -56,8 +56,8 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -936,7 +936,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="31.82125" y="5.33375" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="LED4" library="led" package="SML0805" value="" x="39.52875" y="22.38375" smashed="yes" rot="R270">
-<attribute name="NAME" x="41.16375" y="23.4075" size="0.7" layer="25" rot="R270"/>
+<attribute name="NAME" x="40.6875" y="23.4075" size="0.7" layer="25" rot="R270"/>
 <attribute name="VALUE" x="37.52875" y="23.88375" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="LED1" library="led" package="SML0805" value="" x="3.65125" y="3.33375" smashed="yes" rot="R180">
@@ -977,7 +977,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="29.5275" y="5.715" size="0.7" layer="25"/>
 </element>
 <element name="R21" library="tuetuopay" package="R0603" value="330" x="37.94125" y="22.38375" smashed="yes" rot="R90">
-<attribute name="NAME" x="40.3225" y="23.1775" size="0.7" layer="25" rot="R270"/>
+<attribute name="NAME" x="36.35375" y="23.33625" size="0.7" layer="25" rot="R270"/>
 </element>
 <element name="R22" library="tuetuopay" package="R0603" value="330" x="37.94125" y="35.71875" smashed="yes" rot="R90">
 <attribute name="NAME" x="36.83" y="35.8775" size="0.7" layer="25" rot="R180"/>
@@ -986,7 +986,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="40.9575" y="60.16625" size="0.7" layer="25" rot="R180"/>
 </element>
 <element name="R24" library="tuetuopay" package="R0603" value="330" x="25.87625" y="61.43625" smashed="yes" rot="R180">
-<attribute name="NAME" x="26.51125" y="60.80125" size="0.7" layer="25" rot="R180"/>
+<attribute name="NAME" x="26.82875" y="60.6425" size="0.7" layer="25" rot="R180"/>
 </element>
 <element name="R25" library="tuetuopay" package="R0603" value="330" x="12.54125" y="61.43625" smashed="yes" rot="R180">
 <attribute name="NAME" x="12.54125" y="60.6425" size="0.7" layer="25" rot="R270"/>
@@ -1022,13 +1022,13 @@ design rules under a new name.</description>
 <attribute name="NAME" x="26.82875" y="46.19625" size="0.7" layer="25"/>
 </element>
 <element name="R13" library="tuetuopay" package="R0603" value="10k" x="35.40125" y="46.99" smashed="yes">
-<attribute name="NAME" x="35.08375" y="47.78375" size="0.7" layer="25"/>
+<attribute name="NAME" x="35.2425" y="48.10125" size="0.7" layer="25"/>
 </element>
 <element name="R10" library="tuetuopay" package="R0603" value="100k" x="30.48" y="50.8" smashed="yes">
 <attribute name="NAME" x="32.86125" y="50.00625" size="0.7" layer="25" rot="R90"/>
 </element>
 <element name="R14" library="tuetuopay" package="R0603" value="10k" x="27.94" y="58.89625" smashed="yes" rot="R90">
-<attribute name="NAME" x="27.305" y="58.26125" size="0.7" layer="25" rot="R90"/>
+<attribute name="NAME" x="26.9875" y="58.1025" size="0.7" layer="25" rot="R90"/>
 </element>
 <element name="R11" library="tuetuopay" package="R0603" value="100k" x="17.145" y="50.8" smashed="yes">
 <attribute name="NAME" x="15.39875" y="50.00625" size="0.7" layer="25" rot="R90"/>
@@ -1061,19 +1061,19 @@ design rules under a new name.</description>
 <attribute name="NAME" x="22.38375" y="20.955" size="0.7" layer="25" rot="R180"/>
 </element>
 <element name="C9" library="tuetuopay" package="0603" value="1u" x="9.8425" y="43.65625" smashed="yes" rot="R270">
-<attribute name="NAME" x="9.525" y="42.545" size="0.7" layer="25" rot="R270"/>
+<attribute name="NAME" x="9.525" y="42.06875" size="0.7" layer="25" rot="R270"/>
 </element>
 <element name="C11" library="tuetuopay" package="0603" value="1u" x="14.2875" y="46.6725" smashed="yes" rot="R270">
 <attribute name="NAME" x="15.24" y="47.78375" size="0.7" layer="25" rot="R270"/>
 </element>
 <element name="C10" library="tuetuopay" package="0603" value="22n" x="12.7" y="43.65625" smashed="yes" rot="R270">
-<attribute name="NAME" x="12.3825" y="42.545" size="0.7" layer="25" rot="R270"/>
+<attribute name="NAME" x="12.3825" y="42.06875" size="0.7" layer="25" rot="R270"/>
 </element>
 <element name="D17" library="tuetuopay" package="SOT23-3" value="BAS16" x="7.14375" y="46.6725" smashed="yes" rot="R270">
 <attribute name="NAME" x="5.87375" y="49.05375" size="0.635" layer="21" align="top-left"/>
 </element>
 <element name="R26" library="tuetuopay" package="R0603" value="" x="5.3975" y="33.17875" smashed="yes" rot="R270">
-<attribute name="NAME" x="6.0325" y="33.81375" size="0.7" layer="25" rot="R270"/>
+<attribute name="NAME" x="6.19125" y="33.81375" size="0.7" layer="25" rot="R270"/>
 <attribute name="VALUE" x="3.4925" y="33.81375" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="Q10" library="tuetuopay" package="SOT23-3" value="AO3401" x="3.175" y="46.6725" smashed="yes" rot="R270">
@@ -1091,8 +1091,8 @@ design rules under a new name.</description>
 <element name="R30" library="tuetuopay" package="R0603" value="10k" x="31.115" y="17.78" smashed="yes" rot="R270">
 <attribute name="NAME" x="30.1625" y="15.39875" size="0.6858" layer="25"/>
 </element>
-<element name="R31" library="tuetuopay" package="R0603" value="10k" x="35.56" y="21.9075" smashed="yes" rot="R270">
-<attribute name="NAME" x="34.76625" y="19.3675" size="0.6858" layer="25"/>
+<element name="R31" library="tuetuopay" package="R0603" value="10k" x="35.40125" y="21.9075" smashed="yes" rot="R270">
+<attribute name="NAME" x="34.6075" y="19.3675" size="0.6858" layer="25"/>
 </element>
 <element name="R32" library="tuetuopay" package="R0603" value="10k" x="25.87625" y="35.40125" smashed="yes" rot="R270">
 <attribute name="NAME" x="24.28875" y="36.195" size="0.6858" layer="25" rot="R270"/>
@@ -1149,10 +1149,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="38.52875" y="58.2725" size="0.635" layer="25" rot="R90"/>
 </element>
 <element name="D11" library="tuetuopay" package="SOD123" value="MBR0540T1" x="21.59" y="59.055" smashed="yes">
-<attribute name="NAME" x="25.3525" y="58.2725" size="0.635" layer="25" rot="R90"/>
+<attribute name="NAME" x="25.19375" y="58.11375" size="0.635" layer="25" rot="R90"/>
 </element>
 <element name="D12" library="tuetuopay" package="SOD123" value="MBR0540T1" x="8.255" y="59.055" smashed="yes">
-<attribute name="NAME" x="12.17625" y="58.2725" size="0.635" layer="25" rot="R90"/>
+<attribute name="NAME" x="11.85875" y="58.2725" size="0.635" layer="25" rot="R90"/>
 </element>
 </elements>
 <signals>
@@ -1285,7 +1285,7 @@ design rules under a new name.</description>
 <via x="29.5275" y="62.70625" extent="1-16" drill="0.3302"/>
 <via x="33.02" y="62.5475" extent="1-16" drill="0.3302"/>
 <via x="29.21" y="58.89625" extent="1-16" drill="0.3302"/>
-<via x="31.75" y="58.7375" extent="1-16" drill="0.3302"/>
+<via x="31.75" y="58.1025" extent="1-16" drill="0.3302"/>
 <via x="26.035" y="56.1975" extent="1-16" drill="0.3302"/>
 <via x="23.495" y="55.5625" extent="1-16" drill="0.3302"/>
 <via x="23.1775" y="53.0225" extent="1-16" drill="0.3302"/>
@@ -1341,7 +1341,7 @@ design rules under a new name.</description>
 <via x="29.36875" y="55.40375" extent="1-16" drill="0.3302"/>
 <via x="29.21" y="49.37125" extent="1-16" drill="0.3302"/>
 <via x="34.6075" y="52.86375" extent="1-16" drill="0.3302"/>
-<via x="32.86125" y="50.165" extent="1-16" drill="0.3302"/>
+<via x="32.385" y="49.53" extent="1-16" drill="0.3302"/>
 <via x="40.16375" y="64.29375" extent="1-16" drill="0.3302"/>
 <via x="41.75125" y="62.865" extent="1-16" drill="0.3302"/>
 <via x="41.5925" y="51.59375" extent="1-16" drill="0.3302"/>
@@ -1362,7 +1362,7 @@ design rules under a new name.</description>
 <via x="23.01875" y="45.56125" extent="1-16" drill="0.3302"/>
 <via x="36.67125" y="16.8275" extent="1-16" drill="0.3302"/>
 <via x="23.8125" y="36.195" extent="1-16" drill="0.3302"/>
-<via x="12.3825" y="41.5925" extent="1-16" drill="0.3302"/>
+<via x="11.90625" y="41.5925" extent="1-16" drill="0.3302"/>
 <contactref element="Q11" pad="2"/>
 <contactref element="Q12" pad="2"/>
 <contactref element="Q13" pad="2"/>
@@ -1449,9 +1449,9 @@ design rules under a new name.</description>
 <wire x1="14.1875" y1="47.6225" x2="14.2875" y2="47.5225" width="0.254" layer="1"/>
 <wire x1="12.62125" y1="47.6225" x2="12.62125" y2="46.964475" width="0.254" layer="1"/>
 <wire x1="12.62125" y1="46.964475" x2="11.47355" y2="45.816775" width="0.254" layer="1"/>
-<wire x1="11.47355" y1="42.93146875" x2="11.43" y2="42.88791875" width="0.254" layer="1"/>
-<wire x1="11.47355" y1="45.816775" x2="11.47355" y2="42.93146875" width="0.254" layer="1"/>
-<via x="11.43" y="42.88791875" extent="1-16" drill="0.3302"/>
+<wire x1="11.47355" y1="42.45521875" x2="11.43" y2="42.41166875" width="0.254" layer="1"/>
+<wire x1="11.47355" y1="45.816775" x2="11.47355" y2="42.45521875" width="0.254" layer="1"/>
+<via x="11.43" y="42.41166875" extent="1-16" drill="0.3302"/>
 <wire x1="13.95095" y1="36.53155" x2="13.81125" y2="36.5125" width="0.254" layer="16"/>
 <wire x1="13.81125" y1="36.5125" x2="13.335" y2="36.03625" width="0.254" layer="16"/>
 <wire x1="13.335" y1="36.03625" x2="13.335" y2="29.47125" width="0.254" layer="16"/>
@@ -1559,8 +1559,8 @@ design rules under a new name.</description>
 <wire x1="26.82875" y1="63.02375" x2="26.92625" y2="63.02375" width="0.2032" layer="1"/>
 <wire x1="13.81125" y1="36.5125" x2="13.81125" y2="37.88051875" width="0.254" layer="16"/>
 <wire x1="13.81125" y1="37.88051875" x2="15.1864125" y2="39.25568125" width="0.254" layer="16"/>
-<wire x1="15.1864125" y1="40.66263125" x2="12.961125" y2="42.88791875" width="0.254" layer="16"/>
-<wire x1="12.961125" y1="42.88791875" x2="11.43" y2="42.88791875" width="0.254" layer="16"/>
+<wire x1="15.1864125" y1="40.66263125" x2="13.437375" y2="42.41166875" width="0.254" layer="16"/>
+<wire x1="13.437375" y1="42.41166875" x2="11.43" y2="42.41166875" width="0.254" layer="16"/>
 <wire x1="15.1864125" y1="39.25568125" x2="15.1864125" y2="40.66263125" width="0.254" layer="16"/>
 <wire x1="18.78875" y1="45.72" x2="19.62145" y2="46.5527" width="0.2032" layer="1"/>
 <wire x1="19.62145" y1="48.4125" x2="19.9452" y2="48.73625" width="0.2032" layer="1"/>
@@ -1585,8 +1585,8 @@ design rules under a new name.</description>
 <wire x1="12.12125" y1="18.63" x2="12.065" y2="18.63" width="0.254" layer="1"/>
 <wire x1="13.7414" y1="20.25015" x2="12.12125" y2="18.63" width="0.254" layer="1"/>
 <wire x1="13.7414" y1="24.222825" x2="13.7414" y2="20.25015" width="0.254" layer="1"/>
-<wire x1="35.56" y1="21.0575" x2="36.7175" y2="19.9" width="0.2032" layer="1"/>
-<wire x1="36.7175" y1="19.9" x2="37.94125" y2="19.9" width="0.2032" layer="1"/>
+<wire x1="35.40125" y1="21.0575" x2="36.55875" y2="19.9" width="0.2032" layer="1"/>
+<wire x1="36.55875" y1="19.9" x2="37.94125" y2="19.9" width="0.2032" layer="1"/>
 </signal>
 <signal name="SWDIO">
 <contactref element="U2" pad="34"/>
@@ -1927,7 +1927,7 @@ design rules under a new name.</description>
 <wire x1="24.29125" y1="26.99875" x2="26.51375" y2="24.77625" width="0.2032" layer="1"/>
 <wire x1="26.51375" y1="24.77625" x2="32.69125" y2="24.77625" width="0.2032" layer="1"/>
 <wire x1="32.69125" y1="24.77625" x2="34.71" y2="22.7575" width="0.2032" layer="1"/>
-<wire x1="34.71" y1="22.7575" x2="35.56" y2="22.7575" width="0.2032" layer="1"/>
+<wire x1="34.71" y1="22.7575" x2="35.40125" y2="22.7575" width="0.2032" layer="1"/>
 </signal>
 <signal name="TAC3">
 <contactref element="D8" pad="1"/>
