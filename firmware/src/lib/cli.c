@@ -19,13 +19,12 @@ static const ShellCommand commands[] = {
 };
 
 // Shell module configs
-static const ShellConfig shellCfgUSB = {
-	(BaseSequentialStream*)&SDU1,
-	commands
-};
+static const ShellConfig
+	shellCfgUSB = {(BaseSequentialStream*)&SDU1, commands},
+	shellCfgSerial = {(BaseSequentialStream*)&SD3, commands};
 
 // Shell threads
-static thread_t *cliThreadUSB = NULL;
+static thread_t *cliThreadUSB = NULL, cliThreadSerial;
 
 // Shell exit event
 static void shellDisconnectedHandler(eventid_t id) {
@@ -81,6 +80,11 @@ static THD_FUNCTION(usbWatcherThd, arg) {
 	}
 }
 
+static THD_WORKING_AREA(waShellSerial, 2048);
+
+// Serial config
+SerialConfig serialCfg = {.speed = 115200, .cr1 = 0, .cr2 = 0, .cr3 = 0};
+
 void cliInit(void) {
 	// Setup USB pins
 	palSetLineMode(LINE_USB_DM, PAL_MODE_STM32_ALTERNATE_OPENDRAIN);
@@ -102,4 +106,16 @@ void cliInit(void) {
 
 	// Listen for the shell exited event
 	chEvtRegister(&shell_terminated, &el0, 0);
+
+	// Setup serial pins
+	sdStart(&SD3, &serialCfg);
+	palSetLineMode(LINE_SCL_TXD, PAL_MODE_STM32_ALTERNATE_PUSHPULL);
+	palSetLineMode(LINE_SDA_RXD, PAL_MODE_INPUT_PULLUP);
+
+	// Run shell on serial port
+	chThdCreateStatic(
+		waShellSerial, sizeof(waShellSerial),
+		NORMALPRIO + 1,
+		shellThread, (void*)&shellCfgSerial
+	);
 }
