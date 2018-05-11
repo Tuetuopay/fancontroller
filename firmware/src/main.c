@@ -9,10 +9,14 @@
 
 #define ever (;;)
 
+#include "lib/cli.h"
+
 int main(void) {
 	// Init HAL and kernel
 	halInit();
 	chSysInit();
+
+	cliInit();
 
 	// Setup blinkies
 	palSetLineMode(LINE_LED1, PAL_MODE_OUTPUT_PUSHPULL);

@@ -1,2 +1,4 @@
 build
 .dep
+local.mk
+.clang_complete
