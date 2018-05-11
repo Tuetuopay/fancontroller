@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.0">
+<eagle version="9.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4651,7 +4651,6 @@ DIN A4, landscape with location and doc. field</description>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="R27" library="tuetuopay" deviceset="R" device="R0603" value="1k5"/>
-<part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
 <part name="R28" library="tuetuopay" deviceset="R" device="R0603" value="10k"/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
@@ -5941,7 +5940,6 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="GND29" gate="1" x="53.34" y="7.62"/>
 <instance part="+3V1" gate="G$1" x="220.98" y="114.3"/>
 <instance part="R27" gate="G$1" x="165.1" y="106.68" rot="R90"/>
-<instance part="+3V2" gate="G$1" x="165.1" y="116.84"/>
 </instances>
 <busses>
 </busses>
@@ -6186,11 +6184,6 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="LED8" gate="G$1" pin="A"/>
 <pinref part="LED5" gate="G$1" pin="A"/>
 <pinref part="LED6" gate="G$1" pin="A"/>
-</segment>
-<segment>
-<pinref part="R27" gate="G$1" pin="2"/>
-<pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<wire x1="165.1" y1="111.76" x2="165.1" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
@@ -6637,6 +6630,18 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="R23" gate="G$1" pin="2"/>
 <pinref part="LED6" gate="G$1" pin="C"/>
 <wire x1="231.14" y1="99.06" x2="231.14" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="USB_PU" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="PB5"/>
+<wire x1="119.38" y1="121.92" x2="119.38" y2="124.46" width="0.1524" layer="91"/>
+<label x="119.38" y="124.46" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R27" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="111.76" x2="165.1" y2="114.3" width="0.1524" layer="91"/>
+<label x="165.1" y="114.3" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
