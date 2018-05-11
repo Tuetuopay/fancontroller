@@ -54,13 +54,16 @@ static THD_FUNCTION(usbWatcherThd, arg) {
 	chRegSetThreadName("USB watcher");
 
 	// Disconnect from the USB
-	usbDisconnectBus(serusbcfg.usbp);
+	// usbDisconnectBus(serusbcfg.usbp);
+	palSetLineMode(LINE_USB_PU, PAL_MODE_INPUT);
 	// Give host time to notice the disconnect
 	chThdSleep(MS2ST(1500));
 	// Start USB driver
 	usbStart(serusbcfg.usbp, &usbcfg);
 	// Re-enable pull-up on D+ (full speed) to tell the host we are back
-	usbConnectBus(serusbcfg.usbp);
+	// usbConnectBus(serusbcfg.usbp);
+	palSetLineMode(LINE_USB_PU, PAL_MODE_OUTPUT_PUSHPULL);
+	palSetLine(LINE_USB_PU);
 
 	while (true) {
 		if (!cliThreadUSB && (SDU1.config->usbp->state == USB_ACTIVE))

@@ -51,6 +51,7 @@
 #define GPIOB_TAC3              1
 #define GPIOB_LED3              2
 #define GPIOB_LED8              4
+#define GPIOB_USB_PU            5
 #define GPIOB_PWM6              6
 #define GPIOB_TAC6              7
 #define GPIOB_PWM7              8
@@ -89,6 +90,7 @@
 #define LINE_TAC3              PAL_LINE(GPIOB, 1)
 #define LINE_LED3              PAL_LINE(GPIOB, 2)
 #define LINE_LED8              PAL_LINE(GPIOB, 4)
+#define LINE_USB_PU            PAL_LINE(GPIOB, 5)
 #define LINE_PWM6              PAL_LINE(GPIOB, 6)
 #define LINE_TAC6              PAL_LINE(GPIOB, 7)
 #define LINE_PWM7              PAL_LINE(GPIOB, 8)
