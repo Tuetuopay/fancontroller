@@ -9,12 +9,19 @@
 
 #include <shell.h>
 #include <chprintf.h>
+#include <stdlib.h>
+#include <string.h>
 
 #include "usbcfg.h"
 #include "cli.h"
 
+#include "driver/led.h"
+
+void cmdLed(BaseSequentialStream *chp, int argc, char *argv[]);
+
 // Available commands
 static const ShellCommand commands[] = {
+	{"led", cmdLed},
 	{NULL, NULL}
 };
 
@@ -121,4 +128,18 @@ void cliInit(void) {
 		NORMALPRIO + 1,
 		shellThread, (void*)&shellCfgSerial
 	);
+}
+
+void cmdLedUsage(BaseSequentialStream *chp) {
+	chprintf(chp, "Usage: led <index> <on|off|toggle>\r\n"
+	              "    index: led no, 0-7\r\n");
+}
+void cmdLed(BaseSequentialStream *chp, int argc, char *argv[]) {
+	if (argc != 2) return cmdLedUsage(chp);
+
+	int index = atoi(argv[0]);
+
+	if      (!strcmp(argv[1], "on"))     ledOn(index);
+	else if (!strcmp(argv[1], "off"))    ledOff(index);
+	else if (!strcmp(argv[1], "toggle")) ledToggle(index);
 }
