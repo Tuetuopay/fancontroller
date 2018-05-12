@@ -121,6 +121,7 @@ CSRC = $(STARTUPSRC) \
        src/main.c \
        src/usbcfg.c \
        src/driver/led.c \
+       src/driver/pwm.c \
        src/lib/cli.c
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global

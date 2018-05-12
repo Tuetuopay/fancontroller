@@ -10,6 +10,7 @@
 #define ever (;;)
 
 #include "driver/led.h"
+#include "driver/pwm.h"
 #include "lib/cli.h"
 
 int main(void) {
@@ -18,6 +19,7 @@ int main(void) {
 	chSysInit();
 
 	ledInit();
+	pwmInit();
 	cliInit();
 
 	for ever {

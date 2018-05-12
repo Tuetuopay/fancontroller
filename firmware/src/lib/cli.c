@@ -16,12 +16,15 @@
 #include "cli.h"
 
 #include "driver/led.h"
+#include "driver/pwm.h"
 
 void cmdLed(BaseSequentialStream *chp, int argc, char *argv[]);
+void cmdPwm(BaseSequentialStream *chp, int argc, char *argv[]);
 
 // Available commands
 static const ShellCommand commands[] = {
 	{"led", cmdLed},
+	{"pwm", cmdPwm},
 	{NULL, NULL}
 };
 
@@ -142,4 +145,16 @@ void cmdLed(BaseSequentialStream *chp, int argc, char *argv[]) {
 	if      (!strcmp(argv[1], "on"))     ledOn(index);
 	else if (!strcmp(argv[1], "off"))    ledOff(index);
 	else if (!strcmp(argv[1], "toggle")) ledToggle(index);
+}
+
+void cmdPwmUsage(BaseSequentialStream *chp) {
+	chprintf(chp, "Usage: pwm <index> <duty cycle>\r\n"
+	              "    index: fan channel no, 0-7\r\n"
+	              "    duty cycle: fan speed, 0-1024\r\n");
+}
+void cmdPwm(BaseSequentialStream *chp, int argc, char *argv[]) {
+	if (argc != 2) return cmdPwmUsage(chp);
+
+	int index = atoi(argv[0]), value = atoi(argv[1]);
+	pwmWrite(index, value);
 }
