@@ -9,6 +9,7 @@
 
 #define ever (;;)
 
+#include "driver/led.h"
 #include "lib/cli.h"
 
 int main(void) {
@@ -16,13 +17,11 @@ int main(void) {
 	halInit();
 	chSysInit();
 
+	ledInit();
 	cliInit();
 
-	// Setup blinkies
-	palSetLineMode(LINE_LED1, PAL_MODE_OUTPUT_PUSHPULL);
-
 	for ever {
-		palToggleLine(LINE_LED1);
+		ledToggle(0);
 		chThdSleep(MS2ST(200));
 	}
 }
